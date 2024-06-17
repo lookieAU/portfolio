@@ -38,6 +38,10 @@
 .nav{
   display: flex;
   flex-direction: row;
+  overflow: auto;
+  margin: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 .navButton{
   width: 100%;
