@@ -7,7 +7,7 @@ export default function Publication(){
             <h2>Publications</h2>
             <ol>
                 <li className={styles.educationItems}>
-                    <h3>Online Classification of EEG signals using deep learning</h3>
+                    <h3>Seizure prediction using hybrid deep learning model</h3>
                     <p style={{fontStyle: "italic"}}>Journal</p>
                     <p>Suresh Babu, Plaban Datta (Jun, 2024 - Present - Preparing for submission to review)</p>
                     <br />
