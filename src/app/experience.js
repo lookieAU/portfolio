@@ -4,68 +4,147 @@ import styles from "./page.module.css"
 export default function Experience(){
     return(
         <div className={styles.educationContainer}>
-            <h3 style={{fontStyle:"italic", fontWeight: 400}}>Well versed in Python, SQL, Javascript, HTML/CSS and stacks/SW such as Firebase Auth/CDN/Store/Functions/Realtime, React Native, ReactJS, EEGLab, NodeJS, Flask, Predictive modelling</h3>
-            <br />
-            <h2>Experience</h2>
-            <ol>
+            <div style={{marginBottom: "2rem", padding: "1.5rem", background: "linear-gradient(135deg, #e3f2fd, #f8f9fa)", borderRadius: "15px", border: "1px solid #e1f5fe"}}>
+                <h2 style={{color: "#2c3e50", marginBottom: "1rem", fontSize: "1.8rem"}}>Technical Skills</h2>
+                <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "1rem"}}>
+                    <div>
+                        <h4 style={{color: "#3498db", marginBottom: "0.5rem"}}>Frontend</h4>
+                        <p style={{fontSize: "0.9rem", color: "#5a6c7d"}}>Next.js, React.js, Vue.js, Flutter, JavaScript, Dart</p>
+                    </div>
+                    <div>
+                        <h4 style={{color: "#3498db", marginBottom: "0.5rem"}}>Backend</h4>
+                        <p style={{fontSize: "0.9rem", color: "#5a6c7d"}}>Node.js, Django, Python, Flask</p>
+                    </div>
+                    <div>
+                        <h4 style={{color: "#3498db", marginBottom: "0.5rem"}}>Database</h4>
+                        <p style={{fontSize: "0.9rem", color: "#5a6c7d"}}>MongoDB, MySQL, SQL, PostgreSQL</p>
+                    </div>
+                    <div>
+                        <h4 style={{color: "#3498db", marginBottom: "0.5rem"}}>DevOps & Tools</h4>
+                        <p style={{fontSize: "0.9rem", color: "#5a6c7d"}}>Docker, WebSockets, GIS Tools</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 style={{color: "#2c3e50", marginBottom: "1.5rem", fontSize: "2rem"}}>Work Experience</h2>
+            <ol style={{listStyle: "none", padding: 0}}>
                 <li className={styles.educationItems}>
-                    <h3>Research Associate (Funded, 2 years)</h3>
-                    <p>National Institute of Technology, Mizoram (May, 2024 - Present)</p>
-                    <br />
-                    <p>Public Health Service project funded by TIH-IIT Bhilai</p>
-                </li>
-                <li className={styles.educationItems}>
-                    <h3>Software Engineer Intern</h3>
-                    <p>Hewlett-Packard Enterprise (Feb, 2023 - May, 2023)</p>
-                    <br />
-                    <p>Network Virtualization and automation testing of NVD using Selenium/ Python</p>
-                </li>
-                <li className={styles.educationItems}>
-                    <h3>Research Intern</h3>
-                    <p>National Institute of Ocean Technology (Feb, 2022 - Apr, 2022 & Jul, 2022 - Aug - 2022)</p>
-                    <br />
-                    <p>Power/ Freshwater prediction using DNN</p>
-                </li>
-            </ol>
-            <h2>Projects</h2>
-            <ol>
-                <li className={styles.educationItems}>
-                    <h3>Public Health Service</h3>
-                    <p>National Institute of Technology, Mizoram (May, 2024 - Present)</p>
-                    <br />
-                    <p>PI: Dr. Lalhruaizela Changgte</p>
-                    <p>Team members: Joseph Vanlalpeka</p>
-                    <br />
-                    <p>Development of a tele-health app which caters to the local population of Mizoram and make healthcare remotely accessible anywhere. Further, NLP will be integrated to make decisions based on severity and other factors</p>
-                </li>
-                <li className={styles.educationItems}>
-                    <h3>Online classification of EEG signals using deep learning</h3>
-                    <p>Anna University (July, 2022 - May, 2023)</p>
-                    <br />
-                    <p>PI: Dr. Sabitha Ramakrishnan</p>
-                    <p>Team members: Kishore Kumar S</p>
-                    <br />
-                    <p>Classification of EEG signals using a hybrid approach (LSTM/CNN) to automate the process of annotation for healthcare professionals. Also, we tried to predict the seizure activity based on continually occuring preictal periods</p>
-                </li>
-                <li className={styles.educationItems}>
-                    <h3>Prediction of Power and Freshwater generation in Open Cycle OTEC Plant at Lakshadweep</h3>
-                    <p>National Institute of Ocean Technology (Feb, 2022 - Apr, 2022 & Jul, 2022 - Aug - 2022)</p>
-                    <br />
-                    <p>PI: Dr. Biren Pattanaik, Dr. S. Sutha</p>
-                    <p>Team members: Thirumurugan B, Vishnu Prasanna V & Sanjay S, Surya S</p>
-                    <br />
-                    <p>We tried to predict the freshater and energy that would be produced daily and monthly by the OTEC plant so that the residual power requirement could be generated using fossil fuels. Our work also included making colour-contoured maps of the same to better demonstrate the seasonal variation</p>
-                </li>
-                <li className={styles.educationItems}>
-                    <h3>Bloodpath (a blood donor/reciepient matching system)</h3>
-                    <p>Anna University (Feb, 2022 - May, 2022)</p>
-                    <br />
-                    <p>PI: Dr. Sangeetha</p>
-                    <p>Team members: Karmukilan K T, Vasundradevi R, Kishore Kumar S, Pushparaman S, A S Saaipriya, Ahmed Atheeq</p>
-                    <br />
-                    <p>Improvised on the existing government system of matching blood donors with banks to directly with recipients based in a particular area filtered by common bloodgroups and other factors</p>
+                    <div style={{display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "1rem"}}>
+                        <div>
+                            <h3 style={{color: "#2c3e50", fontSize: "1.4rem"}}>Software Development Engineer (SDE)</h3>
+                            <p style={{color: "#3498db", fontWeight: "600", fontSize: "1.1rem"}}>Digimed Solutions Pvt. Ltd. (NIT Mizoram)</p>
+                            <p style={{color: "#7f8c8d", fontSize: "0.9rem"}}>Aizawl, India</p>
+                        </div>
+                        <span style={{background: "#e8f5e8", color: "#27ae60", padding: "0.3rem 0.8rem", borderRadius: "20px", fontSize: "0.8rem", fontWeight: "500"}}>May 2024 – Present</span>
+                    </div>
+                    <ul style={{marginLeft: "1rem", color: "#5a6c7d", lineHeight: "1.6"}}>
+                        <li style={{marginBottom: "0.5rem"}}>• Developed full-stack mobile and web applications using <strong>Next.js, Flutter, Node.js, and MongoDB</strong> for automating public health service delivery</li>
+                        <li style={{marginBottom: "0.5rem"}}>• Implemented real-time chat and video features using <strong>WebSockets</strong></li>
+                        <li style={{marginBottom: "0.5rem"}}>• Ensured <strong>HIPAA compliance</strong> for sensitive medical data management</li>
+                        <li style={{marginBottom: "0.5rem"}}>• Implemented <strong>Docker-based deployment and load balancers</strong>, supporting over <strong>50K concurrent users</strong></li>
+                        <li>• Sponsored by TIH-IIT Bhilai in partnership with Ebenezer Hospital, Aizawl</li>
+                    </ul>
                 </li>
 
+                <li className={styles.educationItems}>
+                    <div style={{display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "1rem"}}>
+                        <div>
+                            <h3 style={{color: "#2c3e50", fontSize: "1.4rem"}}>Software Engineer Intern</h3>
+                            <p style={{color: "#3498db", fontWeight: "600", fontSize: "1.1rem"}}>Hewlett-Packard Enterprise</p>
+                            <p style={{color: "#7f8c8d", fontSize: "0.9rem"}}>Chennai, India</p>
+                        </div>
+                        <span style={{background: "#fff3cd", color: "#856404", padding: "0.3rem 0.8rem", borderRadius: "20px", fontSize: "0.8rem", fontWeight: "500"}}>Feb 2023 – May 2023</span>
+                    </div>
+                    <ul style={{marginLeft: "1rem", color: "#5a6c7d", lineHeight: "1.6"}}>
+                        <li style={{marginBottom: "0.5rem"}}>• Automated UI testing scripts using <strong>Robot framework and Python</strong></li>
+                        <li style={{marginBottom: "0.5rem"}}>• Enhanced automated workflows by <strong>15%</strong>, significantly reducing manual testing time</li>
+                        <li>• Gained experience in network virtualization technologies</li>
+                    </ul>
+                </li>
+
+                <li className={styles.educationItems}>
+                    <div style={{display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "1rem"}}>
+                        <div>
+                            <h3 style={{color: "#2c3e50", fontSize: "1.4rem"}}>Research Intern</h3>
+                            <p style={{color: "#3498db", fontWeight: "600", fontSize: "1.1rem"}}>National Institute of Ocean Technology</p>
+                            <p style={{color: "#7f8c8d", fontSize: "0.9rem"}}>Chennai, India</p>
+                        </div>
+                        <span style={{background: "#e1f5fe", color: "#0277bd", padding: "0.3rem 0.8rem", borderRadius: "20px", fontSize: "0.8rem", fontWeight: "500"}}>Feb 2022 – Apr 2022 & Jul 2022 – Aug 2022</span>
+                    </div>
+                    <ul style={{marginLeft: "1rem", color: "#5a6c7d", lineHeight: "1.6"}}>
+                        <li style={{marginBottom: "0.5rem"}}>• Developed <strong>Flask-based web applications</strong> for predicting daily sea surface temperatures</li>
+                        <li style={{marginBottom: "0.5rem"}}>• Estimated power and freshwater generation capabilities for an <strong>OTEC plant in Lakshadweep</strong></li>
+                        <li>• Created an <strong>Android app using React Native</strong> integrated with GIS tools</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h2 style={{color: "#2c3e50", marginBottom: "1.5rem", fontSize: "2rem", marginTop: "3rem"}}>Freelance Projects</h2>
+            <ol style={{listStyle: "none", padding: 0}}>
+                <li className={styles.educationItems}>
+                    <div style={{display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "1rem"}}>
+                        <div>
+                            <h3 style={{color: "#2c3e50", fontSize: "1.4rem"}}>ERP Suite Development</h3>
+                            <p style={{color: "#3498db", fontWeight: "600", fontSize: "1.1rem"}}>Khiangte Construction Pvt. Ltd.</p>
+                            <p style={{color: "#7f8c8d", fontSize: "0.9rem"}}>Aizawl, India</p>
+                        </div>
+                        <span style={{background: "#f3e5f5", color: "#7b1fa2", padding: "0.3rem 0.8rem", borderRadius: "20px", fontSize: "0.8rem", fontWeight: "500"}}>Feb 2025 – Apr 2025</span>
+                    </div>
+                    <ul style={{marginLeft: "1rem", color: "#5a6c7d", lineHeight: "1.6"}}>
+                        <li style={{marginBottom: "0.5rem"}}>• Developed an ERP suite, significantly reducing manual workflows from <strong>100% to 20%</strong></li>
+                        <li style={{marginBottom: "0.5rem"}}>• Utilized <strong>Vue.js with Quasar framework, Node.js backend, and MySQL</strong> for ACID compliance</li>
+                        <li>• Suite handed over to organization, with ongoing employee training</li>
+                    </ul>
+                </li>
+
+                <li className={styles.educationItems}>
+                    <div style={{display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "1rem"}}>
+                        <div>
+                            <h3 style={{color: "#2c3e50", fontSize: "1.4rem"}}>Reward-Based Platform</h3>
+                            <p style={{color: "#3498db", fontWeight: "600", fontSize: "1.1rem"}}>Zohive Mobile</p>
+                            <p style={{color: "#7f8c8d", fontSize: "0.9rem"}}>Aizawl, India</p>
+                        </div>
+                        <span style={{background: "#e8f5e8", color: "#27ae60", padding: "0.3rem 0.8rem", borderRadius: "20px", fontSize: "0.8rem", fontWeight: "500"}}>May 2025 – Present</span>
+                    </div>
+                    <ul style={{marginLeft: "1rem", color: "#5a6c7d", lineHeight: "1.6"}}>
+                        <li style={{marginBottom: "0.5rem"}}>• Built a reward-based platform targeting <strong>educational and research institutions</strong></li>
+                        <li style={{marginBottom: "0.5rem"}}>• Utilized <strong>Flutter frontend, Django backend</strong>, and containerized deployment with <strong>Docker</strong></li>
+                        <li>• Planned database migration from SQLite3 to <strong>PostgreSQL</strong> for production</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h2 style={{color: "#2c3e50", marginBottom: "1.5rem", fontSize: "2rem", marginTop: "3rem"}}>Key Projects</h2>
+            <ol style={{listStyle: "none", padding: 0}}>
+                <li className={styles.educationItems}>
+                    <div style={{display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "1rem"}}>
+                        <div>
+                            <h3 style={{color: "#2c3e50", fontSize: "1.4rem"}}>Seizure Detection and Classification using Deep Learning</h3>
+                            <p style={{color: "#7f8c8d", fontSize: "0.9rem"}}>Final Year Project</p>
+                        </div>
+                        <span style={{background: "#e1f5fe", color: "#0277bd", padding: "0.3rem 0.8rem", borderRadius: "20px", fontSize: "0.8rem", fontWeight: "500"}}>Jul 2022 – Apr 2023</span>
+                    </div>
+                    <ul style={{marginLeft: "1rem", color: "#5a6c7d", lineHeight: "1.6"}}>
+                        <li style={{marginBottom: "0.5rem"}}>• Developed a <strong>hybrid CNN-LSTM model</strong> for EEG signal classification</li>
+                        <li style={{marginBottom: "0.5rem"}}>• Achieved <strong>~95% accuracy</strong> in predicting seizures 15 seconds prior to occurrence</li>
+                        <li>• Utilized <strong>CHB-MIT and Bonn Epilepsy datasets</strong></li>
+                    </ul>
+                </li>
+
+                <li className={styles.educationItems}>
+                    <div style={{display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "1rem"}}>
+                        <div>
+                            <h3 style={{color: "#2c3e50", fontSize: "1.4rem"}}>Blood Bank Management System</h3>
+                            <p style={{color: "#7f8c8d", fontSize: "0.9rem"}}>Web Application Project</p>
+                        </div>
+                        <span style={{background: "#fff3cd", color: "#856404", padding: "0.3rem 0.8rem", borderRadius: "20px", fontSize: "0.8rem", fontWeight: "500"}}>Jan 2022 – May 2022</span>
+                    </div>
+                    <ul style={{marginLeft: "1rem", color: "#5a6c7d", lineHeight: "1.6"}}>
+                        <li style={{marginBottom: "0.5rem"}}>• Created web application for connecting blood donors and recipients based on <strong>location and medical criteria</strong></li>
+                        <li style={{marginBottom: "0.5rem"}}>• Implemented comprehensive authentication and search functionalities using <strong>Node.js and SQL</strong></li>
+                        <li>• Developed web app interface using <strong>Pug.js templating engine</strong></li>
+                    </ul>
+                </li>
             </ol>
         </div>
     )
